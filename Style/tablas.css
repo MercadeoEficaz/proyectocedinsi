@@ -13,6 +13,7 @@ tr>th{
 
 tbody>tr:hover{
 background-color: red;
+color: aliceblue;
 }
 
 #americadecali{
@@ -22,4 +23,8 @@ background-color: red;
 caption{
     font-size: larger;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#americadecali:hover{
+    color: aliceblue;
 }
