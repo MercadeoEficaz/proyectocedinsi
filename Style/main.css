@@ -1,0 +1,45 @@
+form{
+    position: absolute;
+    top: 100px;
+    left: 35%;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 50px;
+    }
+
+form>img{
+    width: 50%;
+    padding-bottom: 30px;
+}
+
+form>input{
+    font-size: 22px;
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 15px 2px;
+    border-color: orange;
+}
+
+form>button{
+    background-color: orange;
+    color: white;
+    padding: 15px;
+    width: 50%;
+    border-radius: 20%;
+    border-color: orange;
+    box-shadow: 5px 5px 5px chocolate;
+}
+
+form>button:hover{
+    background-color: black;
+    color: orange;
+    font-size: 25px;
+    width: 40%;
+}
+
+.recordarcontraseña{
+padding-top: 30px;
+font-size: 22px;
+
+}

@@ -7,17 +7,26 @@
     <title>Mi proyecto Cedinsi</title>
     <link rel="stylesheet" href="Style/main.css">
     <link rel="stylesheet" href="Style/tablas.css">
+    <link rel="stylesheet" href="Style/menu.css">
+    <link rel="stylesheet" href="Style/carrusel.css">
+    <link rel="stylesheet" href="Style/formulariosuscripcion.css">
 </head>
 <body>
     <header>
         <!-- Este section de aqui considero que no deberia ir, solo dejar la etiqueta <a /> -->
         <!-- **************** -->
-         <a href="index.html"><img src="Imagenes/logo Manuel Eduardo Martin.jpg" alt="Logo Manuel Eduardo Martin"></a>
          <!-- **************** -->
 
         <!-- Este section de aqui considero que no deberia ir, solo dejar la etiqueta <nav /> -->
         <!-- **************** -->
         <nav >
+          <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <a href="#" class="enlace">
+          <a href="index.html"><img src="Imagenes/logo Manuel Eduardo Martin.jpg" alt="Logo Manuel Eduardo Martin" class="logo"></a>
+        </a>
                 <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="nuestrosproductos.html">Nuestros productos</a></li>
@@ -30,13 +39,20 @@
     </header>
     <!-- no deberian haber mas de 1 etiqueta body, y todas las etiquetas se deben escribir en minusculas cada una de sus letras  -->
     <body>
-        <section>
-            <img src="Imagenes/slide1.jpg" width="100 px" alt="Slide 1">
-            <img src="Imagenes/slide 2.jpg" width="100 px" alt="Slide 2">
-            <img src="Imagenes/slide3.mp4" width="100 px" alt="Slide 3">
-        </section>
-        <section>
-         <table>
+      <div class="slider-container"> 
+        <video src="Videos/video-manuel-eduardo-martin.mp4" width="100%" autoplay muted loop type="video/mp4">
+      </video> 
+        <img
+          class="slider-item"
+          src="Imagenes/slide1.jpg" width="50%" alt="Slide 1"
+        />
+        <img
+          class="slider-item"
+          src="Imagenes/slide 2.jpg" width="50%" alt="Slide 2"
+        />
+        />
+      </div>  
+       <table>
             <caption>Clasificación futbol colombiano</caption>
             <thead>
             <tr>
@@ -116,7 +132,23 @@
             </tbody>
              </table>
         </section>
-    </body>
+           </body>
+
+           <section>
+            <div>
+              <img src="Imagenes/Manuel-Eduardo-Martin.jpg" alt="">
+            </div>
+            <div>
+            <form class="formulariosuscripcion">
+              <h2>Suscríbete</h2>
+              <p>a nuestro newsletter</p>
+              <input type="text" placeholder="Nombre" required>
+              <input type="email" placeholder="Correo electrónico" required>
+              <textarea name="" id="" cols="30" rows="10" maxlength="100" required></textarea>
+              <button type="submit">Registrarse</button>
+            </form>
+            </div>
+           </section>
 
     <Footer>
         <section>
