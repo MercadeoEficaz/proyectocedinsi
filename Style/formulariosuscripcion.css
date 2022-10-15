@@ -1,14 +1,14 @@
 .formulariosuscripcion{
     form{
-        position: relative;
+        display: flex;     
         top: 100px;
         left: 35%;
         width: 30%;
         text-align: center;
         margin-bottom: 50px;
         }
-    
-        
+    }
+
     form>input{
         font-size: 22px;
         width: 80%;
@@ -35,12 +35,10 @@
         width: 40%;
     }
     
-
-    textarea{
+textarea{
     max-width: 80%;
     max-height: 300px;
     min-width: 80%;
     min-height: 100px;
     
     }
-}

@@ -1,42 +1,70 @@
 <!DOCTYPE html>
 <html lang="es>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Área de clientes</title>
-    <link rel="stylesheet" href="Style/main.css">
-    <link rel="stylesheet" href="Style/tablas.css">
-    <link rel="stylesheet" href="Style/menu.css">
-    <link rel="stylesheet" href="Style/carrusel.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi proyecto Cedinsi</title>
+  <link rel="stylesheet" href="Style/main.css">
+  <link rel="stylesheet" href="Style/formulariosuscripcion.css">
+  <link rel="shortcut icon" href="Imagenes/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav >
-            <input type="checkbox" id="check">
-          <label for="check" class="checkbtn">
-              <i class="fas fa-bars"></i>
-          </label>
-          <a href="#" class="enlace">
-            <a href="index.html"><img src="Imagenes/logo Manuel Eduardo Martin.jpg" alt="Logo Manuel Eduardo Martin" class="logo"></a>
-          </a>
-                  <ul>
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="nuestrosproductos.html">Nuestros productos</a></li>
-              <li><a href="contactenos.html">Contáctenos</a></li>
-              <li><a href="areadeclientes.html">Área de clientes</a></li>
-                  </ul>
-          </nav>
-          <form action="">
-            <img src="Imagenes/areadeclientes.png" alt="Imagen login">
-            <input type="text" placeholder="Digite su usuario">
-            <input type="password" placeholder="Digite su contraseña">
-            <button type="submit">Iniciar sesión</button>
-            <div class="recordarcontraseña">
-              <input type="checkbox" name="recordar">
-              <label for="recordar">Recordar contraseña</label>
-            </div>
-          </form>
-    </header>
+  <header>
+    <nav class="navbar navbar-expand-md bg-warning">
+      <a href="index.html" class="navbar-brand"><img src="Imagenes/logo Manuel Eduardo Martin.jpg" width="100%" alt="Logo Manue Eduardo Martin"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link active">Inicio</a></li>
+          <li class="nav-item"><a href="nuestrosproductos.html" class="nav-link active">Nuestros productos</a></li>
+          <li class="nav-item"><a href="contactenos.html" class="nav-link active">Contáctenos</a></li>
+          <li class="nav-item"><a href="tablas.html" class="nav-link active">tablas</a></li>
+          <li class="nav-item"><a href="areadeclientes.html" class="nav-link active">Área de clientes</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <form action="">
+      <img src="Imagenes/areadeclientes.png" alt="Imagen login">
+      <input type="email" placeholder="Correo electrónico" required>
+      <input type="password" placeholder="Digite su contraseña" required>
+      <button type="submit">Iniciar sesión</button>
+    <div class="recordarcontraseña">
+      <input type="checkbox" name="recordar">
+      <label for="recordar">Recordar contraseña</label><br><br>
+    </div>
+    <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Registrarse</button>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Registrate ahora</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="formulariosuscripcion">
+          <h2>Llene todos los campos</h2>
+          <input type="text" placeholder="Nombre" required>
+          <input type="email" placeholder="Correo electrónico" required>
+          <input type="tel" placeholder="Númer de telefóno" required>
+          <input type="date" required>
+          <button type="submit">Registrarse</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar cambios</button>
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+
 </body>
 </html>
