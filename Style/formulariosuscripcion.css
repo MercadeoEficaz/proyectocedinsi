@@ -1,3 +1,5 @@
+
+
 .formulariosuscripcion{
     form{
         display: flex;     
@@ -7,38 +9,40 @@
         text-align: center;
         margin-bottom: 50px;
         }
+
+        form>input{
+            font-size: 22px;
+            width: 80%;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 15px 2px;
+            border-color: orange;
+        }
+        
+        form>button{
+            background-color: orange;
+            color: white;
+            padding: 15px;
+            width: 50%;
+            border-radius: 20%;
+            border-color: orange;
+            box-shadow: 5px 5px 5px chocolate;
+        }
+        
+        form>button:hover{
+            background-color: black;
+            color: orange;
+            font-size: 25px;
+            width: 40%;
+        }
+        
+    textarea{
+        max-width: 80%;
+        max-height: 300px;
+        min-width: 80%;
+        min-height: 100px;
+        
+        }
     }
 
-    form>input{
-        font-size: 22px;
-        width: 80%;
-        margin-bottom: 20px;
-        padding: 15px;
-        border-radius: 15px 2px;
-        border-color: orange;
-    }
     
-    form>button{
-        background-color: orange;
-        color: white;
-        padding: 15px;
-        width: 50%;
-        border-radius: 20%;
-        border-color: orange;
-        box-shadow: 5px 5px 5px chocolate;
-    }
-    
-    form>button:hover{
-        background-color: black;
-        color: orange;
-        font-size: 25px;
-        width: 40%;
-    }
-    
-textarea{
-    max-width: 80%;
-    max-height: 300px;
-    min-width: 80%;
-    min-height: 100px;
-    
-    }
