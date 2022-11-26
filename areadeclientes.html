@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es>
 <head>
-  <meta charset=" UTF-8">
+  <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mi proyecto Cedinsi</title>
@@ -52,24 +52,21 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form class="formulariosuscripcion">
+            <form nombre="formulariosuscripcion" onsubmit="return enviar()" class="formulariosuscripcion" action="#">
               <h2>Llene todos los campos</h2>
-              <input type="text" placeholder="Nombre" required>
-              <input type="email" placeholder="Correo electrónico" required>
-              <input type="tel" placeholder="Númer de telefóno" required>
-              <input type="date" required>
-              <button type="submit">Registrarse</button>
+              <input id="nombre" class="error" name="nombre" type="text" placeholder="Nombre" required>
+              <input id="email" class="email" name="email" type="email" placeholder="Correo electrónico" required>
+              <input id="telefono" class="telefono" name="telefono" type="tel" placeholder="Número de telefóno" required>
+              <input type="date" required><br>
+              <button type="submit">Enviar</button>
+              <span id="mensajeDeError"></span>
             </form>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Guardar cambios</button>
-          </div>
-        </div>
       </div>
     </div>
   </form>
-</section>  
+</section> 
+<script src="./js/scripts.js"></script> 
 </body>
 <footer>
   
