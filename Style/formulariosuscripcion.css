@@ -16,22 +16,22 @@
             margin-bottom: 20px;
             padding: 15px;
             border-radius: 15px 2px;
-            border-color: orange;
+            border-color: #FF7900;
         }
         
         form>button{
-            background-color: orange;
+            background-color: #FF7900;
             color: white;
             padding: 15px;
             width: 50%;
             border-radius: 20%;
-            border-color: orange;
-            box-shadow: 5px 5px 5px chocolate;
+            border-color: #FF7900;
+            box-shadow: 5px 5px 5px #FF7900;
         }
         
         form>button:hover{
             background-color: black;
-            color: orange;
+            color: #FF7900;
             font-size: 25px;
             width: 40%;
         }
@@ -50,3 +50,7 @@
         border:2px solid red
     }
     
+    form>img{
+        width: 50%;
+        padding-bottom: 30px;
+    }

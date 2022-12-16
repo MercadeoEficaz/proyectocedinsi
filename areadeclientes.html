@@ -12,6 +12,9 @@
   integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="Style/main.css">
 <link rel="stylesheet" href="Style/formulariosuscripcion.css">
+<link rel="stylesheet" href="Style/contactenos.css">
+<link rel="stylesheet" href="Style/normalize.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
@@ -33,40 +36,59 @@
     </nav> 
     </header>
   <section>
-  <form action="">
-    <img src="Imagenes/areadeclientes.png" alt="Imagen login">
-    <input type="email" placeholder="Correo electrónico" required>
-    <input type="password" placeholder="Digite su contraseña" required>
-    <button type="submit">Iniciar sesión</button>
-    <div class="recordarcontraseña">
-      <input type="checkbox" name="recordar">
-      <label for="recordar">Recordar contraseña</label><br><br>
-    </div>
-    <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Registrarse</button>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Registrate ahora</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form nombre="formulariosuscripcion" onsubmit="return enviar()" class="formulariosuscripcion" action="#">
-              <h2>Llene todos los campos</h2>
-              <input id="nombre" class="error" name="nombre" type="text" placeholder="Nombre" required>
-              <input id="email" class="email" name="email" type="email" placeholder="Correo electrónico" required>
-              <input id="telefono" class="telefono" name="telefono" type="tel" placeholder="Número de telefóno" required>
-              <input type="date" required><br>
-              <button type="submit">Enviar</button>
-              <span id="mensajeDeError"></span>
-            </form>
-          </div>
+  <main>
+  <form action="" class="formulario" id="formulario">
+    <img src="Imagenes/areadeclientes.png" alt="Imagen login"><br>
+    <!-- Grupo: Usuario -->
+    <div class="formulario__grupo" id="grupo__usuario">
+      <label for="usuario" class="formulario__label">Usuario</label>
+      <div class="formulario__grupo-input">
+        <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Manuel Martin">
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
       </div>
+      <p class="formulario__input-error">El usuario tiene que ser de 4 a máximo 25 caracteres y solo puede contener numeros, letras y guion bajo.</p>
+    </div>
+
+    <!-- Grupo: Contraseña -->
+    <div class="formulario__grupo" id="grupo__password">
+      <label for="password" class="formulario__label">Contraseña</label>
+      <div class="formulario__grupo-input">
+        <input type="password" class="formulario__input" name="password" id="password">
+        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+      </div>
+      <p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+    </div>
+    <div class="formulario__grupo formulario__grupo-btn-enviar">
+      <button type="submit" class="formulario__btn">Enviar</button>
+      <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente, Manuel y Cedinsi te dan las gracias.</p>
     </div>
   </form>
+</main>
+<button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal">Registrarse</button>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Registrate ahora</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form nombre="formulariosuscripcion" onsubmit="return enviar()" class="formulariosuscripcion" action="#">
+            <h2>Llene todos los campos</h2>
+            <input id="nombre" class="error" name="nombre" type="text" placeholder="Nombre" required>
+            <input id="email" class="email" name="email" type="email" placeholder="Correo electrónico" required>
+            <input id="telefono" class="telefono" name="telefono" type="tel" placeholder="Número de telefóno" required>
+            <input type="date" required><br>
+            <button type="submit">Enviar</button>
+            <span id="mensajeDeError"></span>
+          </form>
+        </div>
+    </div>
+  </div>
 </section> 
 <script src="./js/scripts.js"></script> 
+<script src="js/formulario.js"></script>
 </body>
 <footer>
   
