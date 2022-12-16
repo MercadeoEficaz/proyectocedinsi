@@ -87,23 +87,3 @@ function fibonacci(numero)
     return numeros;}
 
 document.write(fibonacci(100)); 
-
-/*Leer 10 precios de productos y calcular cuánto cuestan los 10 productos*/
-
-banano =(1); 
-naranja =(2); 
-manzana =(3);  
-pera =(4);  
-melocoton =(5); 
-uva =(6); 
-limon =(7); 
-papaya =(8); 
-patilla =(9); 
-mora =(10);
-
-let acumulador =0;
-for(let i =1; i<=10; i++){
-    acumulador += i;
-    //console.log("vueltas:"+i);
-}
-console.log("suma:"+acumulador);
