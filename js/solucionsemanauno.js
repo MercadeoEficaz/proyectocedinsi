@@ -88,7 +88,7 @@ const salario = prompt("Digite el salario de "+nombre+"");
 let salarioTotal = salario;
 if (salario <= 699999) {
   salarioTotal = (salario - 0.02 - 0.06);
-  console.log("El salario total de " +nombre+" es de"+ salarioFinal+" pesos"); 
+  console.log("El salario total de " +nombre+" es de"+ salarioTotal+" pesos"); 
 } 
 
 /* b. Si gana entre 700.000 y 999.999, Descuento de pensión =4%, Subsidio familiar = 12.000,
@@ -96,12 +96,12 @@ sino le pagan el mismo salario.*/
 
 else if (salario == 700000 <= 999999) {
   salarioTotal = (salario - 0.04 + 12.000)
-  console.log("El salario total de " +nombre+" es de"+ salarioFinal+" pesos"); 
+  console.log("El salario total de " +nombre+" es de"+ salarioTotal+" pesos"); 
 } 
 
 /*c. Si gana más del millón Descuento de pensión =6%*/
 
 else if (salario >= 1000000) {
     salarioTotal = (salario - 0.06)
-    console.log("El salario total de " +nombre+" es de"+ salarioFinal+" pesos"); 
+    console.log("El salario total de " +nombre+" es de"+ salarioTotal+" pesos"); 
 }
