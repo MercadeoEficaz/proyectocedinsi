@@ -75,3 +75,33 @@ centigrados = (farenheit-32)*5/9;
 
 console.log(farenheit +" grados farenheit equivalen a "+centigrados+" grados centigrados");
 
+
+/*ÚNICO EJERCICIO CON ERROR*/
+
+/*Realizar un algoritmo que calcule el salario de un empleado según los siguientes
+parámetros.
+a.Si gana menos de 699.999, Descuento de pensión =2%, y más un Aux. de transporte= 6%.*/
+
+const nombre = prompt("Digite el nombre del empleado");
+const salario = prompt("Digite el salario de "+nombre+"");
+
+let salarioTotal = salario;
+if (salario <= 699999) {
+  salarioTotal = (salario - 0.02 - 0.06);
+  console.log("El salario total de " +nombre+" es de"+ salarioFinal+" pesos"); 
+} 
+
+/* b. Si gana entre 700.000 y 999.999, Descuento de pensión =4%, Subsidio familiar = 12.000,
+sino le pagan el mismo salario.*/
+
+else if (salario == 700000 <= 999999) {
+  salarioTotal = (salario - 0.04 + 12.000)
+  console.log("El salario total de " +nombre+" es de"+ salarioFinal+" pesos"); 
+} 
+
+/*c. Si gana más del millón Descuento de pensión =6%*/
+
+else if (salario >= 1000000) {
+    salarioTotal = (salario - 0.06)
+    console.log("El salario total de " +nombre+" es de"+ salarioFinal+" pesos"); 
+}
