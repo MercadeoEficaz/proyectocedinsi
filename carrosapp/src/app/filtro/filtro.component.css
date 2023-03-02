@@ -2,6 +2,7 @@
     width: 80vw;
     height: 100vh;
     margin: 20px 0;
+    float: left;
 }
 
 table {
