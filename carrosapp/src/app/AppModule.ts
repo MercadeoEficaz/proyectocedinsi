@@ -10,8 +10,9 @@ import { FooterComponent } from './footer/footer.component';
 import { CuerpoComponent } from './cuerpo/cuerpo.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { InicioComponent } from './inicio/inicio.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormularioReactivoComponent } from './formulario-reactivo/formulario-reactivo.component';
+import { FormularioTemplateComponent } from './formulario-template/formulario-template.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -26,14 +27,13 @@ import { FormularioReactivoComponent } from './formulario-reactivo/formulario-re
     ContactoComponent,
     InicioComponent,
     FormularioReactivoComponent,
-    FormsModule
+    FormularioTemplateComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule,
-    FormsModule
-  ],
+    ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
