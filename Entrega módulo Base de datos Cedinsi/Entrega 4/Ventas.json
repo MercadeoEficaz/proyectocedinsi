@@ -1,0 +1,19 @@
+[{
+  "_id": {
+    "$oid": "6427b27c8aa32fad913b6477"
+  },
+  "id_ventas": {
+    "nombre": "cerveza1",
+    "categoria": "Lagers",
+    "Precio": 13.4
+  }
+},{
+  "_id": {
+    "$oid": "6427b29f8aa32fad913b6479"
+  },
+  "id_ventas": {
+    "nombre": "cerveza2",
+    "categoria": "Ales",
+    "Precio": 12.5
+  }
+}]

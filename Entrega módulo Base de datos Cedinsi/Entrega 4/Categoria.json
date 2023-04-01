@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "6427aee38aa32fad913b6460"
+  },
+  "id_categoria": {
+    "categoria": "Lagers"
+  }
+},{
+  "_id": {
+    "$oid": "6427aeef8aa32fad913b6462"
+  },
+  "id_categoria": {
+    "categoria": "Ales"
+  }
+}]

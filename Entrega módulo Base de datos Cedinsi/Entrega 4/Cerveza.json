@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "6427b0838aa32fad913b6470"
+  },
+  "id_cerveza": {
+    "nombre": "cerveza1"
+  }
+},{
+  "_id": {
+    "$oid": "6427b08c8aa32fad913b6472"
+  },
+  "id_cerveza": {
+    "nombre": "cerveza2"
+  }
+},{
+  "_id": {
+    "$oid": "6427b0948aa32fad913b6474"
+  },
+  "id_cerveza": {
+    "nombre": "cerveza3"
+  }
+}]

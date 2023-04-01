@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "6427af308aa32fad913b6465"
+  },
+  "id_categoria": {
+    "materia_prima": "Agua"
+  }
+},{
+  "_id": {
+    "$oid": "6427af478aa32fad913b6467"
+  },
+  "id_categoria": {
+    "materia_prima": "Lúpulo"
+  }
+},{
+  "_id": {
+    "$oid": "6427af568aa32fad913b6469"
+  },
+  "id_categoria": {
+    "materia_prima": "Cebada"
+  }
+},{
+  "_id": {
+    "$oid": "6427afaf8aa32fad913b646b"
+  },
+  "id_categoria": {
+    "materia_prima": "Malta"
+  }
+},{
+  "_id": {
+    "$oid": "6427afbf8aa32fad913b646d"
+  },
+  "id_categoria": {
+    "materia_prima": "Levadura"
+  }
+}]
