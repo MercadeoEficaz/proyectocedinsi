@@ -1,0 +1,47 @@
+CREATE DATABASE cerveceria; 
+
+use cerveceria;
+
+CREATE TABLE cerveza ( 
+    idcerveza int,
+    nombre varchar(255),
+    detalle varchar(255),
+    PRIMARY KEY(idcerveza)
+);
+
+CREATE TABLE categoria ( 
+    idcategoria int,
+    nombre varchar(255),
+    detalle varchar(255),
+    PRIMARY KEY(idcategoria)
+);
+
+
+CREATE TABLE materiaprima ( 
+    idmateriaprima int,
+    nombre varchar(255),
+    detalle varchar(255),
+    PRIMARY KEY(idmateriaprima)
+);
+
+CREATE TABLE cervezamateriaprima ( 
+    idcervezamateriaprima int,
+    cantidad mediumInt(255),
+    unidad mediumInt(255),
+    PRIMARY KEY(idmateriaprima),
+    FOREIGN KEY() references cerveza(idcerveza),
+    FOREIGN KEY() references materiaprima(idmateriaprima)
+);
+
+CREATE TABLE tipocategoria ( 
+    idtipocategoria int,
+    nombre varchar(255),
+    detalle varchar(255),
+    PRIMARY KEY(idtipocategoria)
+);
+
+CREATE TABLE nombre ( 
+    idnombre int,
+    nombre varchar(255),
+    PRIMARY KEY(nombre)
+);
